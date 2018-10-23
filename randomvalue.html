@@ -1,0 +1,223 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>True Random Integers</title>
+	<style type="text/css">
+body
+{
+
+    width: 100%;
+height:100%;
+position:fixed;
+	
+
+	padding: 0px;
+	background-color:#f4f5f7;
+	font-family: Charlie Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
+}
+
+
+.header
+{
+padding:10px;
+	display: inline-block;
+	background-color: #CCCCFF;
+	width: 100%;
+	height: 70px;
+	margin-left: -23px;
+	font-family: Charlie Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
+font-weight:600;
+letter-spacing:1px;
+color:#253858;
+font-size:45px;
+text-align:center;
+
+}
+.main
+{
+	
+	height:200px;
+	width: 100%;
+	margin-bottom: 0px;
+letter-spacing:1px;
+
+}
+
+.main_box1
+{
+font-weight:600;
+	width: 100%;
+	text-align: center;
+}
+.main_box2
+{
+
+	width:80%;
+color: #42526E;
+font-size: 23px; 
+margin-left:10%;
+margin-top: -5px;
+margin-bottom: 0px;
+font-family: Charlie Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif; 
+
+	text-align: center;
+}
+
+
+
+.widget
+{
+	margin-top: 20px;
+	
+	padding-top: 0px;
+	
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 350px;
+	
+	background-size: 400px;
+
+    
+}
+.block
+{
+margin-top:0;
+margin-left:-10px;
+height:50px;
+}
+.curve
+{
+background-color:#f4f5f7;
+width:100%;
+margin-left:-23px;
+margin-bottom:0px;
+
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 5px;
+	padding: 5px;
+	border: 2px;
+	outline: 0;
+	vertical-align: baseline;
+}
+#true-random-integer-generator {
+	font-family: verdana,sans;
+	font-size: 25px;
+	background: #FFFFFF;
+	padding: 5px;
+	margin: 0px;
+	width: 588px;
+height:350px;
+	color: #777777;
+	border: 2px solid #CCCCFF;
+}
+#true-random-integer-generator-title {
+	text-align: center;
+	padding: 5px;
+	display: block;
+	background: #CCCCFF;
+	color: #000000;
+	margin: -6px;
+	margin-bottom: 10px;
+font-size:25px;
+}
+#true-random-integer-generator-min-span {
+	display: block;
+	margin-bottom: 5px;
+font-size:25px;
+}
+#true-random-integer-generator-max-span {
+	display: block;
+	margin-bottom: 5px;
+font-size:25px;
+}
+#true-random-integer-generator-result {
+	display: block;
+	padding: 2px;
+	margin-bottom: 10px;
+	color: #000000;
+	background: #CCCCFF;
+	
+font-size:25px;
+}
+#true-random-integer-generator-credits {
+	display: block;
+	font-size: 25px;
+	text-align: right;
+	padding: 5px;
+}
+#true-random-integer-generator-credits a {
+	color: #777777;
+font-size:25px;
+}
+#true-random-integer-generator-button {
+	display: block;
+font-size:22pt;
+}
+#true-random-integer-generator-max-span label {
+	color: #777777;
+font-size:25px;
+}
+#true-random-integer-generator-max-span input {
+	width: 200px;
+	margin-left: 6px;
+font-size:25px;
+}
+#true-random-integer-generator-min-span label {
+	color: #777777;
+}
+#true-random-integer-generator-min-span input {
+	width: 200px;
+	margin-left: 10px;
+font-size:25px;
+}
+</style>
+
+</head>
+
+<body>
+	<div class="header">
+		WELCOME!★★★True Random Integers
+	</div>
+	<div class="main">
+		<div class="main_box1"><p style="font-size: 40px;color: #253858;text-align: center;font-family: Charlie Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif">
+Some realization of true random integers</p>
+		</div>
+		<div class="main_box2"><p style="">
+Most random variables used in computors are actually <I>pseudo-random</I>.This website <a href="https://www.random.org/">https://www.random.org/</a> offers random varriables of which the radomness comes from atmosphere noise, which for many purposes is better than the pseudo-random number algorithms typically used in computer programs. </p>
+		</div>
+		
+	</div>
+	<div class="widget" align="center">
+<div id="true-random-integer-generator">
+
+<span id="true-random-integer-generator-title">True Random Number Generator</span>
+
+<span id="true-random-integer-generator-min-span">
+		
+<label for="true-random-integer-generator-min">Min:</label>
+		
+<input name="true-random-integer-generator-min" id="true-random-integer-generator-min" onkeypress="return integerJsInputControl(event);" type="number" maxlength="9" value="">
+	</span>
+	<span id="true-random-integer-generator-max-span">
+		<label for="true-random-integer-generator-max">Max:</label>
+		<input name="true-random-integer-generator-max" id="true-random-integer-generator-max" onkeypress="return integerJsInputControl(event);" type="number" maxlength="9" value="">
+	</span>
+	<span id="true-random-integer-generator-max-button-span">
+		<input name="true-random-integer-generator-button" id="true-random-integer-generator-button" onclick="getTrueRandomInteger(document.getElementById('true-random-integer-generator-min').value, document.getElementById('true-random-integer-generator-max').value);" type="button" value="Generate">
+	</span>
+	<label for="true-random-integer-generator-result" style="float=left;margin:10px;">Result:</label>
+	<span id="true-random-integer-generator-result" style="margin-top:20px;height:35px;font-size:25px;"></span>
+	<span id="true-random-integer-generator-credits">Powered by <a href="https://www.random.org/" target="_blank">RANDOM.ORG</a></span>
+</div></body>
+	</div>
+<div class="block"></div>
+<div class="curve">
+<svg xmlns="http://www.w3.org/2000/svg" class="curve-container__curve curve-three" viewBox="0 0 1440 68" enable-background="new 0 0 1440 68"><path fill="white" transform="translate(0 -1977)" d="m 1622.3 1937.7 c 0 0 -410.7 169.1 -913.4 75.5 c -502.7 -93.6 -977.7 56.3 -977.7 56.3 v 440 h 1891.1 v -571.8" /></svg>
+</div>
+
+
+</body>
+</html>
